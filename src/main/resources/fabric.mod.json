@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "cauldrons",
+  "version": "${version}",
+
+  "name": "cauldrons",
+  "description": "aaaa",
+  "authors": [
+    "Kineticcat_"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/cauldrons/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cauldrons.cauldrons"
+    ]
+  },
+
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
