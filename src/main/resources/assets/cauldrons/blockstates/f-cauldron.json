@@ -1,5 +1,6 @@
 {
     "variants": {
-      "": { "model": "cauldrons:block/f-cauldron" }
+      "empty": { "model": "cauldrons:block/f-cauldron" },
+      "full" : { "model": "cauldrons:block/f-cauldron-full"}
     }
   }
