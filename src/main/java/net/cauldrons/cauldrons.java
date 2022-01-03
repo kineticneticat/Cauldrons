@@ -16,7 +16,6 @@ import net.minecraft.util.registry.Registry;
 public class cauldrons implements ModInitializer {
 
     // endsteel stuff
-    public static final Item ENDSTEEL_INGOT = new Item(new FabricItemSettings().group(ItemGroup.MATERIALS));
     public static final Block ENDSTEEL_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
     // bases
     public static final Item GOLD_BASE = new Item(new FabricItemSettings().group(ItemGroup.BREWING));
@@ -37,7 +36,6 @@ public class cauldrons implements ModInitializer {
             setDefaultState(getStateManager().getDefaultState().with(FULL, false));
         }
     }
-
     @Override
     public void onInitialize() {
         // bases
@@ -46,7 +44,7 @@ public class cauldrons implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("cauldrons", "diamond-base"), DIAMOND_BASE);
         Registry.register(Registry.ITEM, new Identifier("cauldrons", "netherite-base"), NETHERITE_BASE);
         // endsteel stuff
-        Registry.register(Registry.ITEM, new Identifier("cauldrons", "endsteel-ingot"), ENDSTEEL_INGOT);
+        Registry.register(Registry.ITEM, new Identifier("cauldrons", "endsteel-ingot"), endsteelIngot.ENDSTEEL_INGOT);
         Registry.register(Registry.BLOCK, new Identifier("cauldrons", "endsteel-block"), ENDSTEEL_BLOCK);
         Registry.register(Registry.ITEM, new Identifier("cauldrons", "endsteel-block"), new BlockItem(ENDSTEEL_BLOCK, new FabricItemSettings().group(ItemGroup.MISC)));
         // cauldron
