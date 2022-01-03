@@ -4,7 +4,8 @@
 		"4": "cauldrons:block/cauldron-bottom",
 		"5": "cauldrons:block/cauldron-inner",
 		"6": "cauldrons:block/cauldron-side",
-		"7": "cauldrons:block/cauldron-top"
+		"7": "cauldrons:block/cauldron-top",
+		"particle": "cauldrons:block/fancy_cauldron"
 	},
 	"elements": [
 		{

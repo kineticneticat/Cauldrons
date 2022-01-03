@@ -6,7 +6,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "cauldron:f-cauldron"
+            "name": "cauldron:f_cauldron"
           }
         ],
         "conditions": [
