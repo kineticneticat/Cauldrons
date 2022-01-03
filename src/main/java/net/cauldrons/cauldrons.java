@@ -3,10 +3,13 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.state.StateManager;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -22,6 +25,18 @@ public class cauldrons implements ModInitializer {
     public static final Item NETHERITE_BASE = new Item(new FabricItemSettings().group(ItemGroup.BREWING));
     // cauldron
     public static final Block F_CAULDRON = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public class F_CAULDRON_CODE extends Block {
+    
+        public static final BooleanProperty FULL = BooleanProperty.of("full");
+        @Override
+        protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
+            stateManager.add(FULL);
+        }
+        public F_CAULDRON_CODE(Settings settings) {
+            super(settings);
+            setDefaultState(getStateManager().getDefaultState().with(FULL, false));
+        }
+    }
 
     @Override
     public void onInitialize() {
