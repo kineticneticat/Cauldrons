@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-      "layer0": "cauldrons:item/diamond-base"
+      "layer0": "cauldrons:item/diamond_base"
     }
   }

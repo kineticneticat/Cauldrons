@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-      "layer0": "cauldrons:item/iron-base"
+      "layer0": "cauldrons:item/endsteel_ingot"
     }
   }

@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "cauldrons textures/Cauldron Texture/cauldron_bottom",
-		"1": "cauldrons textures/Cauldron Texture/cauldron_inner",
-		"2": "cauldrons textures/Cauldron Texture/cauldron_side",
-		"3": "cauldrons textures/Cauldron Texture/cauldron_top",
-		"4": "cauldrons textures/Cauldron Texture/water",
+		"0": "cauldrons:block/cauldron_bottom",
+		"1": "cauldrons:block/cauldron_inner",
+		"2": "cauldrons:block/cauldron_side",
+		"3": "cauldrons:block/cauldron_top",
+		"4": "cauldrons:block/water",
 		"particle": "cauldrons textures/Cauldron Texture/cauldron_bottom"
 	},
 	"elements": [

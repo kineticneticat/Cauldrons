@@ -6,7 +6,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "cauldron:endsteel-block"
+            "name": "cauldron:endsteel_block"
           }
         ],
         "conditions": [

@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-      "all": "cauldron:block/fancy_cauldron"
-    }
-  }

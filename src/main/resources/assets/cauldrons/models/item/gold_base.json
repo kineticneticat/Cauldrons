@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-      "layer0": "cauldrons:item/netherite-base"
+      "layer0": "cauldrons:item/gold_base"
     }
   }
